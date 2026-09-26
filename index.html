@@ -4,11 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>Melt Cake | كيك وحلويات في بنغازي</title>
-  <meta name="description" content="Melt Cake متجر كيك وحلويات في بنغازي. اختاري من الكيك، الكب كيك، التيراميسو والحلويات وأرسلي طلبك مباشرة عبر واتساب.">
+  <meta name="description" content="Melt Cake متجر كيك وحلويات في بنغازي. اختاري من الكيك، الكب كيك، التيراميسو والحلويات وأرسلي طلبك عبر واتساب.">
   <meta name="theme-color" content="#fff9fb">
   <meta name="robots" content="index,follow">
   <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
+  <style>
+    .url-display {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--pink) 0, #e86692 100%);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 16px;
+      box-shadow: 0 8px 20px rgba(212, 47, 106, 0.3);
+    }
+  </style>
 </head>
 <body>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -26,10 +39,10 @@
       </nav>
       <div class="header-actions">
         <a class="icon-btn whatsapp-link" href="#" aria-label="واتساب Melt Cake" title="واتساب">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.7 11.7 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4Zm-8.3 18.2h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8Zm5.4-7.3c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.6-.1-.2-.7-1.7-1-2.3-.3-.7-.5-.6-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.5Z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.7 11.7 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8z"/></svg>
         </a>
         <button class="icon-btn cart-btn" id="openCart" type="button" aria-label="فتح السلة" title="السلة">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4H3V2h5a1 1 0 0 1 1 .8L9.4 5H21a1 1 0 0 1 1 1.2l-1.4 7A2 2 0 0 1 18.6 15H9.7a2 2 0 0 1-2-1.6L6.1 6 5.4 4H7Zm2.8 9h8.8l1.2-6H9l.8 6ZM10 22a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm8 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4H3V2h5a1 1 0 0 1 1 .8L9.4 5H21a1 1 0 0 1 1 1.2l-1.4 7A2 2 0 0 1 18.6 15H9.7a2 2 0 0 1-2-1.6L6.1 6 5.4 4H7Zm2.8 9h8.8l1.2-6H9l.8 6Zm0 5a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></svg>
           <span class="cart-badge" id="cartBadge">0</span>
         </button>
       </div>
@@ -43,6 +56,7 @@
           <span class="location-pill">داخل بنغازي</span>
           <h1>أهلًا بيك في Melt Cake</h1>
           <p>خذي لفة وشوفي شن عندنا اليوم.</p>
+          <div class="url-display">ميلت كيك بنغازي 🍰</div>
           <div class="hero-actions">
             <a class="btn primary" href="#products">استكشفي المنتجات</a>
             <a class="btn ghost whatsapp-link" href="#">اطلبي توا</a>
@@ -148,7 +162,7 @@
   </footer>
 
   <a class="floating-wa whatsapp-link" href="#" aria-label="التواصل عبر واتساب" title="واتساب">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.7 11.7 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4Z"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.7 11.7 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8z"/></svg>
   </a>
 
   <dialog id="cartDialog" class="cart-dialog">
