@@ -1,0 +1,13 @@
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,250,247,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(240,214,223,.9)}
+.header-inner{height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 16px}
+.logo-link{display:flex;align-items:center;flex:0 0 auto;touch-action:manipulation;order:2}
+.logo{width:80px;height:50px;object-fit:contain;display:block}
+
+.header-actions{display:flex;align-items:center;gap:8px;order:1;margin-right:auto}
+.icon-btn{position:relative;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;display:grid;place-items:center;color:var(--pink);padding:0;box-shadow:0 2px 8px rgba(119,56,79,.06);touch-action:manipulation;transition:all .2s ease}
+.icon-btn:hover{background:var(--pink-pale);box-shadow:0 4px 12px rgba(119,56,79,.12)}
+.icon-btn:active{transform:scale(.95)}
+.icon-btn svg{width:22px;height:22px;fill:currentColor;display:block}
+
+.cart-badge{position:absolute;top:-8px;left:-8px;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--pink);color:#fff;border:2px solid var(--cream);font-size:12px;font-weight:700;display:grid;place-items:center}
