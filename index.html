@@ -2,61 +2,172 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=yes">
-  <meta name="theme-color" content="#d42f6a">
-  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>Melt Cake | كيك وحلويات في بنغازي</title>
-  <meta name="description" content="متجر Melt Cake للكيك والحلويات في بنغازي. اختاري منتجاتك المفضلة وأرسلي طلبك عبر واتساب.">
+  <meta name="description" content="Melt Cake متجر كيك وحلويات في بنغازي. اختاري من الكيك، الكب كيك، التيراميسو والحلويات وأرسلي طلبك عبر واتساب.">
+  <meta name="theme-color" content="#fff9fb">
+  <meta name="robots" content="index,follow">
   <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header class="site-header" role="banner">
-    <div class="header-content">
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <header class="site-header">
+    <div class="shell header-inner">
       <a class="logo-link" href="#home" aria-label="Melt Cake - الرئيسية">
-        <img src="./assets/logo.svg" alt="شعار Melt Cake" class="logo" width="80" height="50">
+        <img src="./assets/logo.svg" alt="شعار Melt Cake" class="logo">
       </a>
+
       <div class="header-actions">
-        <a class="icon-btn whatsapp-link" href="#" aria-label="واتساب" title="راسلينا على واتساب">
-          <svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20"><path d="M17.6 6.4A8 8 0 0 0 4 12c0 1.4.3 2.8.9 4L4 20l4.3-1.1c1.2.7 2.6 1.1 4.1 1.1a8 8 0 0 0 5.3-14.6zm-4.4 12H8.4v-1.8h4.8v1.8zm0-2.5H8.4v-1.8h4.8v1.8zm0-2.5H8.4V8.6h4.8v1.8z" fill="currentColor"/></svg>
+        <a class="icon-btn whatsapp-link" href="#" aria-label="واتساب Melt Cake" title="واتساب">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.7 11.7 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8z"/></svg>
         </a>
-        <button class="icon-btn cart-btn" id="cartBtn" type="button" aria-label="السلة" title="عرض السلة">
-          <svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20"><path d="M7 4H3V2h5a1 1 0 0 1 1 .8L9.4 5H21a1 1 0 0 1 1 1.2l-1.4 7A2 2 0 0 1 18.6 15H9.7a2 2 0 0 1-2-1.6L6.1 6 5.4 4H7zm2.8 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="currentColor"/></svg>
-          <span class="cart-badge" id="cartBadge" aria-live="polite">0</span>
+
+        <button class="icon-btn cart-btn" id="openCart" type="button" aria-label="فتح السلة" title="السلة">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4H3V2h5a1 1 0 0 1 1 .8L9.4 5H21a1 1 0 0 1 1 1.2l-1.4 7A2 2 0 0 1 18.6 15H9.7a2 2 0 0 1-2-1.6L6.1 6 5.4 4H7Zm2.8 9h8.8l1.2-6H9l.8 6Zm0 5a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></svg>
+          <span class="cart-badge" id="cartBadge">0</span>
         </button>
       </div>
     </div>
   </header>
 
   <main id="home">
-    <section class="hero-section">
-      <div class="hero-content">
-        <h1>أهلاً بيك في Melt Cake 🍰</h1>
-        <p>كيك وحلويات لذيذة في بنغازي</p>
+    <section class="hero">
+      <div class="shell hero-inner">
+        <div class="hero-copy reveal">
+          <span class="location-pill">داخل بنغازي</span>
+          <h1>أهلًا بيك في Melt Cake</h1>
+          <p>خذي لفة وشوفي شن عندنا اليوم.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">استكشفي المنتجات</a>
+            <a class="btn ghost whatsapp-link" href="#">اطلبي توا</a>
+          </div>
+          <span class="vip-badge" id="vipBadge">زبونة مميزة ✓</span>
+        </div>
+
+        <div class="hero-sticker reveal" aria-hidden="true">
+          <img src="https://i.ibb.co/VYrWr3ZV/E6622-E63-352-B-430-C-9810-383-D660141-D0.png" alt="" fetchpriority="high" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#products" aria-label="انزلي للمنتجات">
+        <img src="https://i.ibb.co/gKGk1bM/A25-C3-EDD-1683-43-D4-811-D-D9-D7-C9-D36381.png" alt="" loading="lazy" onerror="this.style.display='none'">
+        <span>المنتجات تحت</span>
+      </a>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="shell">
+        <div class="section-heading products-heading reveal">
+          <div>
+            <span class="kicker">Melt Cake</span>
+            <h2>اختاري اللي يعجبك</h2>
+          </div>
+          <img class="section-sticker" src="https://i.ibb.co/N2j6nsTt/A2-E81903-396-F-4261-96-F3-746-C9-D0784-CE.png" alt="" loading="lazy" onerror="this.style.display='none'">
+        </div>
+
+        <div class="category-jumps" id="categoryJumps" aria-label="أقسام المنتجات"></div>
+        <div id="productSections"></div>
       </div>
     </section>
 
-    <section class="categories-section" id="categories">
-      <h2>اختاري اللي يعجبك</h2>
-      <div class="categories-grid" id="categoriesGrid"></div>
+    <section class="custom-cake-section" id="custom-cake">
+      <div class="shell custom-layout">
+        <div class="custom-copy reveal">
+          <span class="kicker">للمناسبات</span>
+          <h2>خصّصي تورتتك</h2>
+          <p>اختاري المقاس واكتبي التفاصيل، وبعد إرسال الطلب ابعتي صورة التصميم على واتساب بشكل منفصل.</p>
+          <img class="custom-sticker" src="https://i.ibb.co/FGHVs03/E8073-C0-F-90-B4-4685-8-D55-38-D976-F502-C9.png" alt="" loading="lazy" onerror="this.style.display='none'">
+        </div>
+
+        <div class="custom-builder reveal">
+          <div class="size-grid" id="sizeGrid"></div>
+          <div class="custom-fields">
+            <label>الكمية<input id="customQty" type="number" min="1" value="1"></label>
+            <label>تاريخ الاستلام<input id="customDate" type="date"></label>
+            <label class="wide">تفاصيل التصميم<textarea id="customNotes" placeholder="مثال: ألوان وردية، كتابة الاسم بالأبيض..."></textarea></label>
+          </div>
+          <button class="btn primary wide-btn" id="addCustomCake" type="button">أضيفي التورتة للسلة</button>
+          <p class="helper-note">بعد ما ترسلي الطلب، ابعتي صورة التصميم على واتساب بشكل منفصل 💗</p>
+        </div>
+      </div>
     </section>
 
-    <section class="products-section" id="products"></section>
+    <section class="booking-section" id="booking">
+      <div class="shell compact-grid">
+        <div class="booking-copy reveal">
+          <span class="kicker">حجز مسبق</span>
+          <h2>احجزي طلبك</h2>
+          <p>للطلبات اللي تحتاج موعد أو تجهيز خاص.</p>
+          <div class="deposit-note"><strong>مهم:</strong> الحجز لا يتأكد إلا بعد تحويل العربون وإرسال إشعار التحويل.</div>
+        </div>
+
+        <form class="booking-form reveal" id="bookingForm">
+          <label>تاريخ الحجز<input name="date" type="date" required></label>
+          <label>رقم هاتف المستلم<input name="phone" inputmode="tel" required></label>
+          <label>الصنف أو الطلب<input name="item" required></label>
+          <label>الكمية<input name="qty" type="number" min="1" value="1" required></label>
+          <label>موعد الاستلام<input name="pickup" required></label>
+          <label class="wide">تفاصيل أو ملاحظات<textarea name="details" placeholder="اكتبي التفاصيل باختصار"></textarea></label>
+          <button class="btn primary wide-btn" type="submit">إرسال طلب الحجز عبر واتساب</button>
+          <p class="form-status" id="bookingStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
 
     <section class="faq-section">
-      <div class="faq-container">
-        <h2>الأسئلة الشائعة</h2>
+      <div class="shell narrow">
+        <div class="section-heading simple reveal"><span class="kicker">معلومات سريعة</span><h2>الأسئلة الشائعة</h2></div>
         <div class="faq" id="faq"></div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="shell reveal">
+        <h2>كملتي اختيارك؟</h2>
+        <p>راجعي السلة، وبعدها أرسلي الطلب على واتساب.</p>
+        <button class="btn light" id="openCartBottom" type="button">افتحي السلة</button>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <small>© Melt Cake 2024 — جميع الحقوق محفوظة</small>
-    <a id="facebookLink" href="#" target="_blank" rel="noopener" class="social-link">فيسبوك</a>
+  <footer id="contact" class="footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand"><img src="./assets/logo.svg" alt="شعار Melt Cake"><p>كيك وحلويات في بنغازي.</p></div>
+      <div class="footer-links"><a class="whatsapp-link" href="#">واتساب</a><a id="facebookLink" href="#" target="_blank" rel="noopener">فيسبوك</a></div>
+      <small>© Melt Cake — جميع الحقوق محفوظة</small>
+    </div>
   </footer>
 
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <a class="floating-wa whatsapp-link" href="#" aria-label="التواصل عبر واتساب" title="واتساب">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.7 11.7 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8z"/></svg>
+  </a>
+
+  <dialog id="cartDialog" class="cart-dialog">
+    <div class="cart-shell">
+      <div class="cart-head">
+        <div><span class="kicker">Melt Cake</span><h2>سلتك</h2></div>
+        <button class="close-btn" id="closeCart" type="button" aria-label="إغلاق">×</button>
+      </div>
+      <div class="cart-body">
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-summary">
+          <img class="cart-sticker" src="https://i.ibb.co/Ps5CnD5s/1-E8-CCB57-4-C2-F-4-A16-901-C-8-B1206-C3-F0-F0.png" alt="" loading="lazy" onerror="this.style.display='none'">
+          <div class="cart-total-row"><span>الإجمالي</span><strong id="cartTotal">0 د.ل</strong></div>
+          <p class="delivery-mini">التوصيل يُحدد حسب المنطقة.</p>
+          <div class="checkout-fields">
+            <label>الاسم<input id="customerName" autocomplete="name"></label>
+            <label>رقم الهاتف<input id="customerPhone" inputmode="tel" autocomplete="tel"></label>
+            <label>طريقة الاستلام<select id="fulfillment"><option value="delivery">توصيل داخل بنغازي</option><option value="pickup">استلام</option></select></label>
+            <label id="areaField">المنطقة / العنوان<input id="customerArea"></label>
+            <label class="wide">ملاحظات إضافية<textarea id="customerNotes"></textarea></label>
+          </div>
+          <button class="btn primary wide-btn" id="sendCart" type="button">إرسال الطلب عبر واتساب</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
   <script src="./site-data.js"></script>
   <script src="./app.js" defer></script>
