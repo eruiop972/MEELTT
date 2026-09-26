@@ -21,9 +21,8 @@ body{margin:0;min-width:0;overflow-x:hidden;font-family:system-ui,-apple-system,
 
 img,svg{max-width:100%}
 a{color:inherit;text-decoration:none}
-button,input,textarea,select{font:inherit}
+button,input,textarea,select{font:inherit;font-size:16px}
 button{cursor:pointer;touch-action:manipulation}
-input,textarea,select{font-size:16px}
 button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid rgba(212,47,106,.24);outline-offset:2px}
 
 .shell{width:min(1160px,calc(100% - 32px));margin-inline:auto;min-width:0}
@@ -188,11 +187,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .footer-links a{color:var(--pink);font-weight:700;transition:color .2s ease}
 .footer-links a:hover{color:var(--pink-strong)}
 .footer small{font-size:11px;color:var(--muted)}
-
-/* Floating */
-.floating-wa{position:fixed;left:14px;bottom:14px;z-index:45;width:48px;height:48px;border-radius:50%;background:#fff;color:var(--pink);border:1px solid var(--line);box-shadow:0 4px 16px rgba(98,63,79,.15);display:grid;place-items:center;touch-action:manipulation;transition:all .2s ease}
-.floating-wa:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(98,63,79,.2)}
-.floating-wa:active{transform:scale(.95)}
 
 /* Cart Dialog */
 .cart-dialog{border:0;padding:0;width:min(100vw,500px);max-width:96vw;border-radius:20px;box-shadow:0 20px 60px rgba(46,27,35,.24);background:#fff;max-height:90vh;overflow-y:auto}
